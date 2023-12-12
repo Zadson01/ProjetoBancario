@@ -18,14 +18,13 @@ public class SimuladorBancario {
     }
 
     private static void exibirMenu() {
-        System.out.println("\n==== Menu ====");
-        System.out.println("1. Cadastrar conta Poupança");
-        System.out.println("2. Cadastrar conta Corrente");
-        System.out.println("3. Excluir conta");
-        System.out.println("4. Sacar");
-        System.out.println("5. Depositar");
-        System.out.println("6. Solicitar empréstimo");
-        System.out.println("0. Sair");
+        System.out.println("1 => Cadastrar conta Poupança");
+        System.out.println("2 => Cadastrar conta Corrente");
+        System.out.println("3 => Excluir conta");
+        System.out.println("4 => Sacar");
+        System.out.println("5 => Depositar");
+        System.out.println("6 => Solicitar empréstimo");
+        System.out.println("0 => Sair");
         System.out.print("Escolha uma opção: ");
     }
 
