@@ -12,7 +12,6 @@ class ContaCorrente extends Conta {
         return limiteChequeEspecial;
     }
 
-    @Override
     public void sacar(double valor) {
         if (getSaldo() + limiteChequeEspecial >= valor) {
             setSaldo(getSaldo() - valor);
@@ -21,8 +20,6 @@ class ContaCorrente extends Conta {
             System.out.println("Saldo insuficiente para saque de R$" + valor);
         }
     }
-
-   
 
 	public void solicitarEmprestimo(double valor) {
         if (valor <= 5000) {
