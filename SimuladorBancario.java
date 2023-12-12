@@ -3,7 +3,7 @@ package Entities;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class SimuladorBancario {
+public class Banco {
     private static ArrayList<Conta> contas = new ArrayList<>();
     private static int proximoNumeroConta = 1;
     private static Scanner scanner = new Scanner(System.in);
