@@ -15,18 +15,18 @@ class ContaCorrente extends Conta {
     public void sacar(double valor) {
         if (getSaldo() + limiteChequeEspecial >= valor) {
             setSaldo(getSaldo() - valor);
-            System.out.println("Saque de R$" + valor + " realizado com sucesso. Saldo atual: R$" + getSaldo());
+            System.out.println("Saque de R$" + valor + "Saldo atual: R$" + getSaldo());
         } else {
-            System.out.println("Saldo insuficiente para saque de R$" + valor);
+            System.out.println("Saldo insuficiente R$" + valor);
         }
     }
 
 	public void solicitarEmprestimo(double valor) {
         if (valor <= 5000) {
             setSaldo(getSaldo() + valor);
-            System.out.println("Empréstimo de R$" + valor + " aprovado para conta corrente. Saldo atual: R$" + getSaldo());
+            System.out.println("Empréstimo de R$" + valor + " aprovado. Saldo atual: R$" + getSaldo());
         } else {
-            System.out.println("Valor de empréstimo excede o limite para conta corrente.");
+            System.out.println("Valor de empréstimo não permitido.");
         }
     }
 }
