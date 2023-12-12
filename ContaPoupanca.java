@@ -9,13 +9,13 @@ class ContaPoupanca extends Conta {
     public void sacar(double valor) {
         if (getSaldo() >= valor) {
             setSaldo(getSaldo() - valor);
-            System.out.println("Saque de R$" + valor + " realizado com sucesso. Saldo atual: R$" + getSaldo());
+            System.out.println("Saque de R$" + valor + ". Saldo atual: R$" + getSaldo());
         } else {
-            System.out.println("Saldo insuficiente para saque de R$" + valor);
+            System.out.println("Saldo insuficiente de R$" + valor);
         }
     }
 
     public void solicitarEmprestimo(double valor) {
-        System.out.println("Empréstimo não disponível para conta poupança.");
+        System.out.println("Empréstimo não disponível.");
     }
 }
