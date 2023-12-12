@@ -34,13 +34,13 @@ class Conta {
 
     public void depositar(double valor) {
         saldo += valor;
-        System.out.println("Depósito de R$" + valor + " realizado com sucesso. Saldo atual: R$" + saldo);
+        System.out.println("Depósito de R$" + valor + "sucesso. Saldo atual: R$" + saldo);
     }
 
     public void sacar(double valor) {
         if (saldo >= valor) {
             saldo -= valor;
-            System.out.println("Saque de R$" + valor + " realizado com sucesso. Saldo atual: R$" + saldo);
+            System.out.println("Saque de R$" + valor + " sucesso. Saldo atual: R$" + saldo);
         } else {
             System.out.println("Saldo insuficiente para saque de R$" + valor);
         }
